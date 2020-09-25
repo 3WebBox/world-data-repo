@@ -1,0 +1,29 @@
+{
+    "name": "dgera/world-data-repo",
+    "description": "this package contains most of the countries their state and citities and phone number details",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hiteshkan123",
+            "email": "hkanwar@dgera.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "dgera\\WorldDataRepo\\WorldDataRepoServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Dgera\\WorldDataRepo\\": "src/"
+        }
+    }
+}
