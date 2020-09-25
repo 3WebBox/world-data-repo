@@ -12,11 +12,6 @@
     "minimum-stability": "stable",
     "require": {},
     "extra": {
-        "laravel": {
-            "providers": [
-                "dgera\\WorldDataRepo\\WorldDataRepoServiceProvider"
-            ]
-        },
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
