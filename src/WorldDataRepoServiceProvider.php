@@ -27,7 +27,7 @@ class WorldDataRepoServiceProvider extends ServiceProvider
             __DIR__.'/migrations' => base_path('/database/migrations/WorldDataMigrations/'),
         ]);
         $this->publishes([
-            __DIR__.'/seeds/WorldData.php' => base_path('/database/seeder/WorldData.php'),
+            __DIR__.'/seeders/WorldData.php' => base_path('/database/seeders/WorldData.php'),
         ]);
     }
 
