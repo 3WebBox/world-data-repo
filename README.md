@@ -7,7 +7,7 @@ add in composer.json
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://github.com/hiteshkan123/world-data-repo.git"
+        "url": "https://github.com/3WebBox/world-data-repo.git"
     }
 ],
 
@@ -25,4 +25,4 @@ and seeders in seeders/WorldData.php
 models in Models
 and controllers to fetch data
 and routes in routes/world_data_route.php
-add require_once('world_data_route.php'); in api.php/web.php to fetch the records
+add require_once('world_data_route.php'); in api.php/web.php to fetch the records and only one will work at a time
