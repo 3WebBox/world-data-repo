@@ -21,7 +21,12 @@ run php artisan vendor:publish
 select index of Dgera\WorldDataRepo\WorldDataRepoServiceProvider
 
 you will have migrations in database/migrations/WorldDataMigrations
+run php artisan migrate --path=database/migrations/WorldDataMigrations to create tables 
 and seeders in seeders/WorldData.php
+For laravel < 8
+    move the seeders/WorldData.php to seeds/WorldData.php and remove the namespace and use File;
+
+php artisan db:seed --class=WorldData
 models in Models
 and controllers to fetch data
 and routes in routes/world_data_route.php
