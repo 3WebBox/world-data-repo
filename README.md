@@ -2,7 +2,7 @@ if you have project in packages/dgera/ folder
 then 
 add in composer.json
 "require": {
-    "dgera/world-data-repo": "^1.0.6"
+    "dgera/world-data-repo": "^1.0.7"
 },
 "repositories": [
     {
@@ -10,6 +10,8 @@ add in composer.json
         "url": "https://github.com/hiteshkan123/world-data-repo.git"
     }
 ],
+
+run composer update / install
 
 add in config/app.php providers array
 Dgera\WorldDataRepo\WorldDataRepoServiceProvider::class,
