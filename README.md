@@ -1,19 +1,13 @@
 if you have project in packages/dgera/ folder
 then 
 add in composer.json
-"autoload": {
-    "psr-4": {
-        "Dgera\\WorldDataRepo\\": "packages/dgera/WorldDataRepo/src/"
-    }
-}
-
 "require": {
-    "dgera/world-data-repo": "~1.0-dev"
+    "dgera/world-data-repo": "^1.0.6"
 },
 "repositories": [
     {
         "type": "vcs",
-        "url": "git repo url"
+        "url": "https://github.com/hiteshkan123/world-data-repo.git"
     }
 ],
 
@@ -23,3 +17,10 @@ Dgera\WorldDataRepo\WorldDataRepoServiceProvider::class,
 
 run php artisan vendor:publish
 select index of Dgera\WorldDataRepo\WorldDataRepoServiceProvider
+
+you will have migrations in database/migrations/WorldDataMigrations
+and seeders in seeders/WorldData.php
+models in Models
+and controllers to fetch data
+and routes in routes/world_data_route.php
+add require_once('world_data_route.php'); in api.php/web.php to fetch the records

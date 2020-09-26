@@ -29,6 +29,9 @@ class WorldDataRepoServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/seeders/WorldData.php' => base_path('/database/seeders/WorldData.php'),
         ]);
+        $this->publishes([
+            __DIR__.'/routes/api.php' => base_path('/routes/world_data_route.php'),
+        ]);
     }
 
     /**

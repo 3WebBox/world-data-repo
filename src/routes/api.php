@@ -12,12 +12,9 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-# URL Shortener
-Route::prefix('v1')->group(function(){
-	# Get Countries Route
-	Route::get('countries','WorldController@getCountries');
-	# Get States Route
-	Route::get('states/{countryId}','WorldController@getStates');
-	# Get Cities Route
-	Route::get('cities/{stateId}/{from}','WorldController@getCities');
-});
+# Get Countries Route
+Route::get('countries','WorldController@getCountries');
+# Get States Route
+Route::get('states/{countryId}','WorldController@getStates');
+# Get Cities Route
+Route::get('cities/{stateId}/{from?}','WorldController@getCities');
