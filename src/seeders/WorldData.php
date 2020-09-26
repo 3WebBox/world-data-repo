@@ -1,9 +1,13 @@
 <?php
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+
 use App\Models\City;
 use App\Models\State;
 use App\Models\Country;
+
+use File;
 
 class WorldData extends Seeder
 {
@@ -16,7 +20,7 @@ class WorldData extends Seeder
     {
     	ini_set("memory_limit","256M");
         // Read JSON file
-		$world = File::get(base_path("vendor/dgera/WorldDataRepo/src/seeds/world_data.json"));
+		$world = File::get(base_path("vendor/dgera/world-data-repo/src/seeders/world_data.json"));
 
 		//Decode JSON
 		$world = json_decode($world,true);
