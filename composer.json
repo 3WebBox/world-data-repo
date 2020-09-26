@@ -13,7 +13,7 @@
     "require": {},
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.3"
+            "dev-master": "1.0.5"
         }
     },
     "autoload": {

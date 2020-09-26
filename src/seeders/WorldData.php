@@ -20,7 +20,7 @@ class WorldData extends Seeder
     {
     	ini_set("memory_limit","256M");
         // Read JSON file
-		$world = File::get(base_path("vendor/dgera/world-data-repo/src/seeders/world_data.json"));
+		$world = File::get(base_path("vendor\\dgera\\world-data-repo\\src\\seeders\\world_data.json"));
 
 		//Decode JSON
 		$world = json_decode($world,true);
@@ -64,15 +64,5 @@ class WorldData extends Seeder
 				}
 			}
 		}
-		$jsondata = json_encode($world, JSON_PRETTY_PRINT);
-	   
-		//write json data into data.json file
-		if(file_put_contents('database/world_data.json', $jsondata)) {
-			echo 'Data successfully saved';
-		}
-		else{ 
-			echo "error";
-		}
-
     }
 }
